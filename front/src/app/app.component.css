@@ -1,0 +1,30 @@
+.chat-container {
+    display: grid;
+    place-items: center;
+    height: 70vh;
+    width: 100vw;
+}
+
+.chat {
+    border: 1px solid;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+}
+
+.footer {
+    background: #cccccc;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    margin: 0 auto;
+}
+
+.send-button {
+    margin: 0 auto;
+    height: 70%;
+    width: 50%;
+}

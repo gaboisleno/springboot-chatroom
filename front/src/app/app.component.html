@@ -1,0 +1,18 @@
+<div style="text-align: center;">
+    <h1>Welcome to {{ title }}!</h1>
+
+    <div class="chat-container">
+        <div class="chat" id="chat">
+            <div *ngFor="let chat of chats" class="row">
+                {{ chat }}
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <form [formGroup]="myForm" (ngSubmit)="sendMessage()">
+            <input type="text" formControlName="message"/>
+            <button class="send" type="submit">Send</button>
+        </form>
+    </div>
+</div>
